@@ -69,10 +69,10 @@ def analysis_process(doc, collection, model):
 def main():
     
     # 파이어베이스 db에서 정보 가져오기
-    db = firestore.Client.from_service_account_json("firestore-key.json")
-#     key_dict = json.loads(st.secrets["textkey"])
-#     creds = service_account.Credentials.from_service_account_info(key_dict)
-#     db = firestore.Client(credentials=creds)
+#     db = firestore.Client.from_service_account_json("firestore-key.json")
+    key_dict = json.loads(st.secrets["textkey"])
+    creds = service_account.Credentials.from_service_account_info(key_dict)
+    db = firestore.Client(credentials=creds)
     collection = db.collection("user001")
     
     # 모델 불러오기
