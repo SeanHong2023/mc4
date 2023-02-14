@@ -1,6 +1,6 @@
 import streamlit as st
 st.set_page_config(page_title='Mon Chaton - Care your cat', layout='wide')
-st.title('몽샤통')
+st.title('Mon Chaton')
 st.markdown('### 당신의 반려묘를 위한 인공지능 안심 케어')
 
 html='''
