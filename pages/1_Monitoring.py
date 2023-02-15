@@ -204,7 +204,7 @@ html = '''
           recordImg.innerText = "녹화 Off";
           console.log('녹화종료: ' + isRecord);
           recorder.stop();
-          setTimeout("playRecording()", 100)
+          setTimeout("playRecording()", 500)
         }
         
         function playRecording() {
